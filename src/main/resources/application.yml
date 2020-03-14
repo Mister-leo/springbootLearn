@@ -1,0 +1,18 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: springbootLearn
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springdemo
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibername:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
